@@ -1,0 +1,45 @@
+body {
+    margin: 0 25%;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background: #000000;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    border-bottom: 1px solid;
+}
+
+h2 {
+    color: #0072aa;
+    font-weight: normal;
+    margin-bottom: 1px;
+}
+
+.posts{
+    background: linear-gradient(65deg, rgb(22 20 20), transparent);
+    color: whitesmoke;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 1em;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+a {
+    color:#0072aa;
+    text-decoration:none;
+}
+
+p.date {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 1px;
+}
+
+p{
+    color: white;
+}

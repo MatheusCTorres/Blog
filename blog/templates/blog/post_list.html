@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+
+{% block title %}My Blog {% endblock %}
+
+{% block content %}
+    {% for post in post_list %}
+        <article class="posts">
+            <h2>
+                <a href= "{{ post.get_absolute_url }}">
+                    {{ post.title }}
+                </a>
+                    
+            </h2>
+            <p class="date">
+                Published in {{ post.created }} by {{ post.author }}
+            </p>
+            {{ post.body|linebreaks|truncatewords:10 }} <!--will limit the p content post for 10 words-->
+        </article>
+    {% endfor %}
+{% endblock %}
